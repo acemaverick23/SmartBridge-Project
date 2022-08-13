@@ -1,0 +1,70 @@
+<html>
+ <head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>   
+<body>
+<form action="/guest" method="POST">
+
+<h3 align="right">Loan Check Form</h3>
+<br>
+<label for="Age">Age : </label> 
+<input type = "text" name = "Age"/>
+
+<label for="Gender">Gender : </label> 
+<select name="Sex">
+<option value="male">Male</option>
+<option value="female">Female</option>
+</select>
+
+<label for="Job">Job : </label> 
+<select name="Job">
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+</select>
+
+<label for="Housing">Housing : </label> 
+<select name="Housing">
+<option value="own">Own</option>
+<option value="free">Free</option>
+<option value="rent">Rent</option>
+</select>
+
+
+<label for="Saving">Saving : </label> 
+<select name="Saving">
+<option value="little">Little</option>
+<option value="moderate">Moderate</option>
+<option value="rich">Rich</option>
+</select>
+
+
+<label for="Checking">Checking : </label> 
+<select name="Checking">
+<option value="little">Little</option>
+<option value="moderate">Moderate</option>
+<option value="rich">Rich</option>
+</select>
+
+
+<label for="Credit">Credit : </label> 
+<input type = "text" name = "Credit"/>
+
+
+<label for="Duration">Duration : </label> 
+<input type = "text" name = "Duration"/>
+
+
+<label for="Purpose">Purpose : </label> 
+<select name="Purpose">
+<option value="radio/TV">Radio/TV</option>
+<option value="car">Car</option>
+<option value="business">Business</option>
+<option value="furniture/equipment">Furniture/Equipment</option>
+<option value="domestic appliances">domestic appliances</option>
+</select>
+
+
+<p><input type= "submit" value="submit"/></p>
+</form>
+<p align="center"><b>{{y}}</b></p>
